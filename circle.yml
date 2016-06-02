@@ -10,6 +10,7 @@ dependencies:
   override:
   - echo $CIRCLE_COMPARE_URL
   - curl $CIRCLE_COMPARE_URL
+  - git diff origin/master
 test:
   override:
   - echo Dummy test

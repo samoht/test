@@ -1,2 +1,3 @@
 TEST
 foo
+bar
