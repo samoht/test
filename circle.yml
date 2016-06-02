@@ -1,0 +1,15 @@
+machine:
+  xcode:
+    version: "7.3"
+  environment:
+    OPAMYES: "1"
+    OPAMVERBOSE: "1"
+    OPAMJOBS: "2"
+    MACOSX_DEPLOYMENT_TARGET: "10.10"
+dependencies:
+  override:
+  - echo $CIRCLE_COMPARE_URL
+  - curl $CIRCLE_COMPARE_URL
+test:
+  override:
+  - echo Dummy test
